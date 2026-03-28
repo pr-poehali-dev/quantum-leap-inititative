@@ -28,6 +28,7 @@ export default function Featured() {
             <p className="text-sm text-neutral-500 uppercase tracking-wide mt-1">соблюдение сроков</p>
           </div>
           <div>
+            <p className="text-3xl font-bold text-neutral-900">Также</p>
             <p className="text-sm text-neutral-500 uppercase tracking-wide mt-1">гарантия на выполненные работы</p>
           </div>
         </div>
