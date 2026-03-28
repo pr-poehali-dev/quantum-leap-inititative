@@ -12,7 +12,7 @@ const Index = () => {
 
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header onCta={() => setModalOpen(true)} />
       <Hero onCta={() => setModalOpen(true)} />
       <Services onCta={() => setModalOpen(true)} />
       <Featured />
