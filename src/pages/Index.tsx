@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Featured from "@/components/Featured";
+import Works from "@/components/Works";
 import Promo from "@/components/Promo";
 import Footer from "@/components/Footer";
 import LeadModal from "@/components/LeadModal";
@@ -16,6 +17,7 @@ const Index = () => {
       <Hero onCta={() => setModalOpen(true)} />
       <Services onCta={() => setModalOpen(true)} />
       <Featured />
+      <Works />
       <Promo />
       <Footer />
       <LeadModal open={modalOpen} onClose={() => setModalOpen(false)} />
