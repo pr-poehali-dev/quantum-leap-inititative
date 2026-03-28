@@ -37,7 +37,11 @@ const services = [
   },
 ];
 
-export default function Services() {
+interface ServicesProps {
+  onCta?: () => void;
+}
+
+export default function Services({ onCta }: ServicesProps) {
   return (
     <div id="about" className="bg-neutral-50 px-6 py-20 lg:py-32">
       <div className="max-w-7xl mx-auto">
@@ -87,7 +91,10 @@ export default function Services() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <button className="bg-neutral-900 text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-neutral-700 transition-colors duration-300 cursor-pointer">
+          <button
+            onClick={onCta}
+            className="bg-neutral-900 text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-neutral-700 transition-colors duration-300 cursor-pointer"
+          >
             Рассчитать стоимость
           </button>
         </div>

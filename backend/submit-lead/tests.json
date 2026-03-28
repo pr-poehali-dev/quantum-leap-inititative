@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Submit lead success",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Иван Петров", "phone": "+7 999 123-45-67", "service": "Фундаментные работы", "message": "Хочу построить дом"},
+      "expectedStatus": 200,
+      "expectedBody": {"success": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Submit lead missing fields",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": ""},
+      "expectedStatus": 400,
+      "expectedBody": {"error": "Имя и телефон обязательны"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

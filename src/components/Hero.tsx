@@ -1,7 +1,11 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
-export default function Hero() {
+interface HeroProps {
+  onCta?: () => void;
+}
+
+export default function Hero({ onCta }: HeroProps) {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -34,7 +38,10 @@ export default function Hero() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-10">
           Общестроительные работы любой сложности — от фундамента до финишной отделки. Сроки соблюдаем, качество гарантируем.
         </p>
-        <button className="border border-white text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-neutral-900 transition-all duration-300 cursor-pointer">
+        <button
+          onClick={onCta}
+          className="border border-white text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-neutral-900 transition-all duration-300 cursor-pointer"
+        >
           Получить расчёт стоимости
         </button>
       </div>
