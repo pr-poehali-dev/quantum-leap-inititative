@@ -1,7 +1,7 @@
 export default function Featured() {
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2 relative bg-neutral-100 flex items-center justify-center">
+      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2 relative bg-white flex items-center justify-center">
         <img
           src="https://cdn.poehali.dev/projects/7ee54374-8ebc-4619-af96-0e4b7e7ad11c/bucket/2c772197-ccf4-4c33-8a72-e0d87a4cc5b3.jpg"
           alt="Печать организации"
