@@ -65,6 +65,13 @@ export default function Footer() {
                   89134555705@mail.ru
                 </a>
               </div>
+              <div className="flex items-center justify-center ml-0 sm:ml-4">
+                <img
+                  src="https://cdn.poehali.dev/projects/7ee54374-8ebc-4619-af96-0e4b7e7ad11c/bucket/2c772197-ccf4-4c33-8a72-e0d87a4cc5b3.jpg"
+                  alt="Печать организации"
+                  className="w-24 h-24 sm:w-32 sm:h-32 object-contain opacity-90"
+                />
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
               <h1 className="text-[18vw] sm:text-[16vw] lg:text-[14vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 text-white font-bold tracking-tight">
