@@ -58,6 +58,12 @@ export default function Footer() {
                 >
                   +7 913 455-57-05
                 </a>
+                <a
+                  href="mailto:89134555705@mail.ru"
+                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                >
+                  89134555705@mail.ru
+                </a>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
