@@ -23,8 +23,8 @@ export default function Hero({ onCta }: HeroProps) {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="https://cdn.poehali.dev/projects/7ee54374-8ebc-4619-af96-0e4b7e7ad11c/files/abde8433-0e64-4716-bdc7-78f16f4e7bc2.jpg"
-          alt="Строительство домов со спецтехникой"
+          src="https://cdn.poehali.dev/projects/7ee54374-8ebc-4619-af96-0e4b7e7ad11c/bucket/626d0623-8579-46c5-a32b-62e463708188.jpg"
+          alt="СтройПодКлюч"
           className="w-full h-full object-cover"
         />
       </motion.div>
